@@ -13,24 +13,25 @@
 <meta property="og:site_name" content="XIAODUOLU">
 <meta property="og:description" content="机器学习常用算法综述机器学习是用数据或以往的经验，以此优化计算机程序的性能标准，能通过经验自动改进的计算机算法。本文针对目前常用的机器学习算法，按照业内常用的划分方法搭建框架，适合刚接触机器学习的小白和已经学习过一部分算法想要更进一步的学习者，从整体上把握机器学习的脉络，将通常零碎的算法构建成知识体系，从而更好地理解各种算法。鉴于篇幅原因，对具体算法的讲述较为简略，有兴趣可以自行查阅具体算法的相关">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-08-46.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-11-13.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-09-46.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-11-54.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-12-21.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-12-44.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-12-59.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-13-12.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-13-22.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-13-33.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-13-46.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-13-57.png">
-<meta property="og:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-14-09.png">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbiwhn.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbicBF.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbiBpq.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbisXT.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbircV.png">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbi51x.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbiRAJ.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbiojK.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbi491.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbifhR.png">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbig74.png">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbiD10.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbiIc6.png">
+<meta property="og:image" content="https://s1.ax1x.com/2023/02/16/pSbidts.png">
 <meta property="article:published_time" content="2023-02-16T09:01:47.000Z">
-<meta property="article:modified_time" content="2023-02-16T09:41:47.434Z">
+<meta property="article:modified_time" content="2023-02-16T09:58:51.613Z">
 <meta property="article:author" content="XIAODUOLU">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/_posts/machine-learning/2023-02-16-17-08-46.png">
+<meta name="twitter:image" content="https://s1.ax1x.com/2023/02/16/pSbiwhn.jpg">
   
     <link rel="alternate" href="/atom.xml" title="XIAODUOLU" type="application/atom+xml">
   
@@ -112,50 +113,50 @@
         <h1 id="机器学习常用算法综述"><a href="#机器学习常用算法综述" class="headerlink" title="机器学习常用算法综述"></a>机器学习常用算法综述</h1><p>机器学习是用数据或以往的经验，以此优化计算机程序的性能标准，能通过经验自动改进的计算机算法。本文针对目前常用的机器学习算法，按照业内常用的划分方法搭建框架，适合刚接触机器学习的小白和已经学习过一部分算法想要更进一步的学习者，从整体上把握机器学习的脉络，将通常零碎的算法构建成知识体系，从而更好地理解各种算法。鉴于篇幅原因，对具体算法的讲述较为简略，有兴趣可以自行查阅具体算法的相关文章进行学习。</p>
 <span id="more"></span>
 
-<p><img src="/_posts/machine-learning/2023-02-16-17-08-46.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbiwhn"><img src="https://s1.ax1x.com/2023/02/16/pSbiwhn.jpg" alt="pSbiwhn.jpg"></a></p>
 <p>本文将按照目前机器学习常用的两种视角对算法进行分析。需要注意的是，这两种视角之间互有交叉关系。由于按集成学习&#x2F;非集成学习视角分类不够精细，因此以监督学习&#x2F;无监督学习视角为重点对常用机器学习算法进行讲解。但并不意味着前者不重要。需在学习模型、使用模型的基础上，慢慢理解两种视角的不同思路，最终融会贯通。</p>
 <h2 id="一、机器学习两大类型：非集成学习和集成学习"><a href="#一、机器学习两大类型：非集成学习和集成学习" class="headerlink" title="一、机器学习两大类型：非集成学习和集成学习"></a>一、机器学习两大类型：非集成学习和集成学习</h2><p>非集成学习，即单个个体学习器，整个学习器是一个完整的算法。集成学习则是将多个个体学习器通过各种方式组合起来，共同解决一个问题。二者相比可以形象化地看作一个士兵和一支军队的区别。</p>
 <p>先放一张总结图（集成学习&#x2F;非集成学习视角）。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-11-13.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbicBF"><img src="https://s1.ax1x.com/2023/02/16/pSbicBF.jpg" alt="pSbicBF.jpg"></a></p>
 <p>集成学习常见的有三种方法：Bagging、Boosting和Stacking。<br>Bagging集成学习使用装袋采样来获取数据子集训练基础学习器，通常用于减少方差。通常分类任务使用投票的方式集成，而回归任务通过平均的方式集成，例如随机森林算法。</p>
-<p>Boosting集成学习的主要原则是训练一系列的弱学习器，通常用于减少偏差。对于训练好的弱分类器，如果是分类任务按照权重进行投票，而对于回归任务进行加权，然后再进行预测，例如AdaBoost、提升树算法等等。<br>Stacking集成学习是通过一个元分类器或者元回归器来整合多个分类模型或回归模型的集成学习技术，通常用于提升预测结果。基础模型利用整个训练集做训练，元模型将基础模型的特征作为特征进行训练。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-09-46.png"></p>
+<p>Boosting集成学习的主要原则是训练一系列的弱学习器，通常用于减少偏差。对于训练好的弱分类器，如果是分类任务按照权重进行投票，而对于回归任务进行加权，然后再进行预测，例如AdaBoost、提升树算法等等。<br>Stacking集成学习是通过一个元分类器或者元回归器来整合多个分类模型或回归模型的集成学习技术，通常用于提升预测结果。基础模型利用整个训练集做训练，元模型将基础模型的特征作为特征进行训练。<br><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbiBpq"><img src="https://s1.ax1x.com/2023/02/16/pSbiBpq.jpg" alt="pSbiBpq.jpg"></a></p>
 <p>此外，集成学习方法也可以按照元分类器类型是否相同分为同质集成和异质集成。例如随机森林算法即为典型的同质集成，而Stacking集成通常是异质集成。</p>
 <p>在本文剩余内容中，若无特殊说明，模型均为非集成模型。</p>
 <h2 id="二、机器学习两大模式：监督学习和无监督学习"><a href="#二、机器学习两大模式：监督学习和无监督学习" class="headerlink" title="二、机器学习两大模式：监督学习和无监督学习"></a>二、机器学习两大模式：监督学习和无监督学习</h2><p>在监督学习中，计算机从过去的数据中学习，并将学习的结果应用到当前的数据中，以预测未来的事件。在这种情况下，输入和期望的输出数据都有助于预测未来事件。因此，常用的可以实际解决问题的模式都是监督学习。</p>
 <p>无监督学习是训练机器使用既未分类也未标记的数据的方法。这意味着无法提供训练数据，机器只能自行学习。机器必须能够对数据进行分类，而无需事先提供任何有关数据的信息。这意味着无监督学习的学习结果是无法判断其对错的，因此往往并不能真正切实解决实际问题，而是作为监督学习生成标签的一种方法。在实际应用中，无监督学习的典型例子往往只有聚类，其它例如降维（如PCA降维）、关联规则（如Apriori算法）、PageRank等，往往是用作其它模型数据处理中的一部分，因此本文不再赘述。如有兴趣可以参考一些数据处理的文章。</p>
 <p>在此也放一张总结图（监督学习&#x2F;无监督学习视角）</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-11-54.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbisXT"><img src="https://s1.ax1x.com/2023/02/16/pSbisXT.jpg" alt="pSbisXT.jpg"></a></p>
 <h3 id="（一）、监督学习"><a href="#（一）、监督学习" class="headerlink" title="（一）、监督学习"></a>（一）、监督学习</h3><p>机器学习分为两大目标：分类和回归。</p>
 <p>很多初学者看到一些大佬的文章都会疑惑，回归模型到底是不是分类模型？不同模型可以解决同一个问题，那么求解任何问题的时候是不是都可以用所有的模型套进去试一遍？由于许多文章在解决问题的时候并没有刻意地将分类模型和回归模型划分开，于是会出现有的问题看上去是一个分类问题，但既可以用支持向量机（SVM）或随机森林（Random Forest）来解，又可以用逻辑回归等回归模型来解，使得许多人错误地将分类和回归混淆在一起。因此在讲述具体模型之前，首先让我们捋清楚这两个概念。</p>
 <h4 id="1、分类和回归的区别"><a href="#1、分类和回归的区别" class="headerlink" title="1、分类和回归的区别"></a>1、分类和回归的区别</h4><p>通俗地讲，分类问题即将以往的数据和对应的类别作为依据，把新加入的数据划分成不同的类别，例如将一堆图片里的猫和狗分开，将邮箱里的正常邮件与垃圾邮件分开等等。回归问题即将以往特征条件和对应的数值作为依据，把新加入的特征条件预测不同的数值，如预测股票价格的变化，预测市场风险的变化等。显而易见，分类问题的颗粒度更粗，回归问题的颗粒度更细。回归和分类学术上的区别如下几点：</p>
-<h5 id="（1）回归问题是连续变量，分类问题离散变量。"><a href="#（1）回归问题是连续变量，分类问题离散变量。" class="headerlink" title="（1）回归问题是连续变量，分类问题离散变量。"></a>（1）回归问题是连续变量，分类问题离散变量。</h5><h5 id="（2）回归问题是定量问题，分类问题是定性问题。"><a href="#（2）回归问题是定量问题，分类问题是定性问题。" class="headerlink" title="（2）回归问题是定量问题，分类问题是定性问题。"></a>（2）回归问题是定量问题，分类问题是定性问题。</h5><h5 id="（3）回归与分类的根本区别在于输出空间是否为一个度量空间。"><a href="#（3）回归与分类的根本区别在于输出空间是否为一个度量空间。" class="headerlink" title="（3）回归与分类的根本区别在于输出空间是否为一个度量空间。"></a>（3）回归与分类的根本区别在于输出空间是否为一个度量空间。</h5><p><img src="/_posts/machine-learning/2023-02-16-17-12-21.png"> </p>
+<h5 id="（1）回归问题是连续变量，分类问题离散变量。"><a href="#（1）回归问题是连续变量，分类问题离散变量。" class="headerlink" title="（1）回归问题是连续变量，分类问题离散变量。"></a>（1）回归问题是连续变量，分类问题离散变量。</h5><h5 id="（2）回归问题是定量问题，分类问题是定性问题。"><a href="#（2）回归问题是定量问题，分类问题是定性问题。" class="headerlink" title="（2）回归问题是定量问题，分类问题是定性问题。"></a>（2）回归问题是定量问题，分类问题是定性问题。</h5><h5 id="（3）回归与分类的根本区别在于输出空间是否为一个度量空间。"><a href="#（3）回归与分类的根本区别在于输出空间是否为一个度量空间。" class="headerlink" title="（3）回归与分类的根本区别在于输出空间是否为一个度量空间。"></a>（3）回归与分类的根本区别在于输出空间是否为一个度量空间。</h5><p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbircV"><img src="https://s1.ax1x.com/2023/02/16/pSbircV.png" alt="pSbircV.png"></a></p>
 <p>在此基础上，完完全全究其根本，分类和回归的本质又是一样的，都是要建立映射关系。在实际操作中，经常将回归问题和分类问题互相转化，即分类模型可将回归模型的输出离散化，回归模型也可将分类模型的输出连续化。例如，根据身高体重预测一个人的年龄是回归问题，但可以将年龄划分为少年、青年、壮年、老年四个层次，那么根据身高体重预测一个人的年龄层次就是一个分类问题。又如在机器学习常用库sklearn中，支持向量机分为SVM（Support Vector Machine，支持向量机）、SVC（Support Vector Classification，用于分类的支持向量机）和SVR（Support Vector Regression，用于回归的支持向量机）三大类。由于SVM的典型用法是分类器，因此本文在讲述的时候将其划分为分类模型。</p>
 <p>由于回归问题转化为分类问题的过程中往往降低了运算量，而分类问题转化为回归问题往往会增加运算量，因此好的回归模型往往可以用来解决分类问题，而好的分类模型不一定能较好地回归问题（运算量过大，时间复杂度高）。以下将按照回归和分类的两个类别分别介绍典型模型。另外，深度学习（神经网络）方法既能很好地解决回归问题，也能很好地解决分类问题。由于其特殊性（衍生模型多、多种理论繁杂、应用范围广得离谱），单独放为一类进行介绍。</p>
 <h4 id="2、常用的回归模型"><a href="#2、常用的回归模型" class="headerlink" title="2、常用的回归模型"></a>2、常用的回归模型</h4><h5 id="2-1、线性回归模型"><a href="#2-1、线性回归模型" class="headerlink" title="2.1、线性回归模型"></a>2.1、线性回归模型</h5><p>线性回归是最广为人知的建模技术之一，它通常是学习机器学习时最先接触的技术。在线性回归中，因变量是连续的，自变量可以是连续的或离散的，并且模型相对于系数也是线性的。简单线性回归和多元线性回归的区别在于，多元线性回归有多个自变量，而简单线性回归只有1个自变量。线性回归的目标是找到能够较好拟合数据的“拟合线”，而找到最佳拟合线的常用方法是最小二乘估计。</p>
 <h5 id="2-2、逻辑回归模型"><a href="#2-2、逻辑回归模型" class="headerlink" title="2.2、逻辑回归模型"></a>2.2、逻辑回归模型</h5><p>与线性回归类似，目标也是求得最佳拟合线。与之不同的是，线性回归的“拟合线”拟合了一个线性方程（组），而逻辑回归拟合了一个逻辑函数方程（组）。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-12-44.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbi51x"><img src="https://s1.ax1x.com/2023/02/16/pSbi51x.jpg" alt="pSbi51x.jpg"></a></p>
 <h5 id="2-3、多项式回归模型"><a href="#2-3、多项式回归模型" class="headerlink" title="2.3、多项式回归模型"></a>2.3、多项式回归模型</h5><p>与线性回归模型类似，区别在于多项式回归模型拟合的是多项式方程（组）【线性方程自变量为一次幂，多项式方程自变量可以为平方、立方或更高次幂】</p>
 <h5 id="2-4、决策树回归算法"><a href="#2-4、决策树回归算法" class="headerlink" title="2.4、决策树回归算法"></a>2.4、决策树回归算法</h5><p>也称回归树，总体流程类似于分类树（决策树分类算法），可参照决策树分类的介绍（3.4）。区别在于，回归树的每一个节点都会得一个预测值，一般为该节点中所有样本的均值。该值即为输入的预测结果。</p>
 <h5 id="2-5、提升决策树算法"><a href="#2-5、提升决策树算法" class="headerlink" title="*2.5、提升决策树算法"></a>*2.5、提升决策树算法</h5><p>*提升决策树是集成学习的一种，也可简称为提升树。在回归树的基础上进行集成的。提升树是迭代多棵回归树来共同决策，每一棵回归树学习的是之前所有树的结论，即整个迭代过程生成的回归树的累加。由此可以看出，提升树算法的集成方式是Boosting集成。在此基础上，加入梯度下降方法来加速损失函数的优化，即形成了梯度提升决策树；又在梯度提升决策树的基础上，将损失函数的一阶导数展开换成二阶导数展开，从而使得损失函数优化速度更快，形成了极端梯度提升算法。</p>
 <h4 id="3、常用的分类模型"><a href="#3、常用的分类模型" class="headerlink" title="3、常用的分类模型"></a>3、常用的分类模型</h4><h5 id="3-1、朴素贝叶斯分类（Naive-Bayes）"><a href="#3-1、朴素贝叶斯分类（Naive-Bayes）" class="headerlink" title="3.1、朴素贝叶斯分类（Naive Bayes）"></a>3.1、朴素贝叶斯分类（Naive Bayes）</h5><p>贝叶斯方法是以贝叶斯公式为底，使用概率统计的知识对样本数据集进行分类，有坚实的数学基础。朴素贝叶斯即在贝叶斯公式的基础上，假设条件相互独立从而简化了运算。由于朴素贝叶斯分类使用简单而能达到不错的效果，因此朴素贝叶斯往往用作模型效果比较的基线（baseline）。此外，在实际应用过程中，诞生了高斯朴素贝叶斯分类、多项式朴素贝叶斯分类和伯努利朴素贝叶斯分类等多种形式。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-12-59.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbiRAJ"><img src="https://s1.ax1x.com/2023/02/16/pSbiRAJ.jpg" alt="pSbiRAJ.jpg"></a></p>
 <h5 id="3-2、支持向量机（support-vector-machines-SVM）"><a href="#3-2、支持向量机（support-vector-machines-SVM）" class="headerlink" title="3.2、支持向量机（support vector machines, SVM）"></a>3.2、支持向量机（support vector machines, SVM）</h5><p>支持向量机是一种二分类模型，学习策略就是间隔最大化，可形式化为一个求解凸二次规划的问题，也等价于正则化的合页损失函数的最小化问题。支持向量机原本是线性分类器，引入核方法后可以求解非线性分类问题。在神经网络得到广泛应用之前，支持向量机是最先进、效果最好的分类器。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-13-12.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbiojK"><img src="https://s1.ax1x.com/2023/02/16/pSbiojK.jpg" alt="pSbiojK.jpg"></a></p>
 <h5 id="3-3、决策树分类"><a href="#3-3、决策树分类" class="headerlink" title="3.3、决策树分类"></a>3.3、决策树分类</h5><p>决策树模仿人类的分类方式，将特征处理成分类规则进行存储，进行分类时按分类规则将数据分入相应的类别。由于数据量过大时分类规则过多、过细，因此产生了剪枝技术、派生规则等对其进行修正，最典型的算法为ID3算法，目的在于减少树深。</p>
 <h5 id="3-4、随机森林分类"><a href="#3-4、随机森林分类" class="headerlink" title="*3.4、随机森林分类"></a>*3.4、随机森林分类</h5><p>*随机森林是集成学习的一种。随机森林与分类树的关系类似于提升树和回归树的关系（2.5），本质上是将多个决策树集成起来进行分类的一种算法，区别在于随机森林的集成方式是Bagging集成。它的原理很简单直观：构建足够多的决策树，对于一个输入，由于分类规则不同，不同的决策树会将其分为不同类别。统计所有决策树生成的分类结果，投票次数最多的那个类别即为最终的输出结果。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-13-22.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbi491"><img src="https://s1.ax1x.com/2023/02/16/pSbi491.jpg" alt="pSbi491.jpg"></a></p>
 <h5 id="3-5、K近邻分类"><a href="#3-5、K近邻分类" class="headerlink" title="3.5、K近邻分类"></a>3.5、K近邻分类</h5><p>KNN算法是分类算法中较为简单的一种。核心思想是：如果一个样本在整个空间中的K个近邻大部分属于某一类别，则该样本也属于这一类别。类似于启发式的“近朱者赤，近墨者黑”的思想。由于其算法过于简单，因此在处理复杂数据集时往往会产生错误。</p>
 <h4 id="4、深度学习（神经网络）"><a href="#4、深度学习（神经网络）" class="headerlink" title="4、深度学习（神经网络）"></a>4、深度学习（神经网络）</h4><p>深度学习是近年来效果最好、发展最快的机器学习模型。由于其思想类似于大脑神经传递信号，又被称为神经网络。神经网络的基础是感知器，作用是获取多个输入产生一个输出，类似于大脑中神经元的作用，因此被称为神经网络的神经元。在将多个神经元按一定的方式组合起来，就构成了神经网络。搭建好网络之后，通过输入训练数据产生输出，将输出与标签进行对比从而得出损失，利用梯度下降法来降低损失函数，按降低的幅度反向传播调整每个神经元的输入输出参数，类似于人类条件反射的形成过程。得益于当前设备计算力的发展，神经网络近年来得到了极大的提升，在多个领域产生了作用。由于深度学习内容较多，网络结构各不相同，在此不展开叙述，未来可以单独开一篇进行讲解。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-13-33.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbifhR"><img src="https://s1.ax1x.com/2023/02/16/pSbifhR.png" alt="pSbifhR.png"></a></p>
 <h3 id="（二）、无监督学习"><a href="#（二）、无监督学习" class="headerlink" title="（二）、无监督学习"></a>（二）、无监督学习</h3><p>目前无监督学习的典型应用只有聚类。聚类的目的在于把相似的东西聚在一起，而不关心这一类是什么。因此，聚类的结果很可能跟实际的分类是完全不同的。常用的聚类方法分为两大类，划分聚类和层次聚类。典型的划分聚类算法有K-means算法, K-medoids算法、CLARANS算法。典型的层次聚类算法有BIRCH算法、DBSCAN算法和CURE算法等。在此对常用的聚类算法进行介绍。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-13-46.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbig74"><img src="https://s1.ax1x.com/2023/02/16/pSbig74.png" alt="pSbig74.png"></a></p>
 <h4 id="1、划分聚类算法"><a href="#1、划分聚类算法" class="headerlink" title="1、划分聚类算法"></a>1、划分聚类算法</h4><h5 id="1-1、K-means算法"><a href="#1-1、K-means算法" class="headerlink" title="1.1、K-means算法"></a>1.1、K-means算法</h5><p>也可以称为K均值算法，其基本思想是通过迭代寻找K个簇（聚类形成的类别）的一种划分方案，使得聚类结果对应的损失函数最小。损失函数通常定义为各个样本距离所属簇中心点的误差平方和。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-13-57.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbiD10"><img src="https://s1.ax1x.com/2023/02/16/pSbiD10.jpg" alt="pSbiD10.jpg"></a></p>
 <h5 id="1-2、K-medoids算法"><a href="#1-2、K-medoids算法" class="headerlink" title="1.2、K-medoids算法"></a>1.2、K-medoids算法</h5><p>也可以称为K中心点法。其基本思想和K-means类似，区别在于K-means的簇心参考点为簇中各样本的平均值，而K-medoids的簇心参考点为簇中各样本最中心的样本对象。可以将二者理解为平均值和中位数的区别。因此K-means对异常值十分敏感，类似于“马云和九个我平均一下就是十个富翁”；而K-medoids具有更好的抗异常值的能力，类似于“马云和九个我取中位数还是穷鬼”，能更好地反应簇群的实际情况。</p>
 <h4 id="2、层次聚类算法"><a href="#2、层次聚类算法" class="headerlink" title="2、层次聚类算法"></a>2、层次聚类算法</h4><h5 id="2-1、DBSCAN算法"><a href="#2-1、DBSCAN算法" class="headerlink" title="2.1、DBSCAN算法"></a>2.1、DBSCAN算法</h5><p>DBSCAN（Density-Based Spatial Clustering of Applications with Noise，具有噪声的基于密度的聚类方法）是一种基于密度的空间聚类算法。该算法将数据点分为三类：核心点、边界点、噪音点，将具有足够密度的区域划分为簇，并在具有噪声的空间数据库中发现任意形状的簇，它将簇定义为密度相连的点的最大集合。</p>
-<p><img src="/_posts/machine-learning/2023-02-16-17-14-09.png"></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbiIc6"><img src="https://s1.ax1x.com/2023/02/16/pSbiIc6.png" alt="pSbiIc6.png"></a></p>
 <h5 id="2-2、BIRCH算法"><a href="#2-2、BIRCH算法" class="headerlink" title="2.2、BIRCH算法"></a>2.2、BIRCH算法</h5><p>BIRCH（Balanced Iterative Reducing and Clustering Using Hierarchies）算法利用了一个树结构来帮助我们快速的聚类，这个树结构类似于平衡B+树，一般将它称之为聚类特征树(Clustering Feature Tree，简称CF Tree)。这颗树的每一个节点是由若干个聚类特征(Clustering Feature，简称CF)组成。建立形成后，Root层的CF个数就是聚类个数。</p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pSbidts"><img src="https://s1.ax1x.com/2023/02/16/pSbidts.png" alt="pSbidts.png"></a></p>
 <p>至此，本文从两个视角分析了机器学习目前的发展状况（集成&#x2F;非集成，监督&#x2F;非监督），并以监督&#x2F;非监督的视角为主对常用机器学习算法进行了简单的介绍与讲解。本人学识浅薄，或有不当之处望多多指出，共同讨论共同进步。</p>
 
       
